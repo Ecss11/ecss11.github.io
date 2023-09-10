@@ -44,7 +44,7 @@ h1 {
     text-align: center;
 }
 
-p, li {
+p, li, a {
     color: var(--text-color);
     font-size: 16px;
     line-height: 2em;
@@ -60,4 +60,22 @@ a {
 
 a:hover {
     color: var(--decorate-color);
+}
+
+@media (max-width: 480px) {
+    body {
+        background: var(--theme-color);
+    }
+
+    article {
+        width: 80%;
+
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    p, li, a {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
 }
