@@ -63,7 +63,7 @@ a:hover {
     color: var(--decorate-color);
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 40rem) {
     body {
         background: var(--theme-color);
     }
