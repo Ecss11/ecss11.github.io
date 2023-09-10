@@ -18,6 +18,8 @@ body {
     "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;;
 
     background-image: url("../assets/background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
 
     user-select: none;
 }
@@ -51,7 +53,6 @@ p, li, a {
 }
 
 a {
-    color: var(--text-color);
     font-weight: bold;
     text-decoration: none;
 
@@ -62,13 +63,13 @@ a:hover {
     color: var(--decorate-color);
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 40em) {
     body {
         background: var(--theme-color);
     }
 
     article {
-        width: 80%;
+        width: 70%;
 
         padding: 1em;
         margin: 0 auto;
