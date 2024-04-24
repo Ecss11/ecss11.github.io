@@ -1,6 +1,8 @@
 :root {
   --color-black-01: #1e1f22;
+  --color-black-02: #18181b;
   --color-blue-01: #7780aa;
+  --color-blue-02: #8c9ed8;
 
   --color-white: white;
   --color-black: black;
@@ -14,6 +16,7 @@
   --tag-color: var(--color-blue-01);
 
   --font-color: var(--color-white);
+  --border-color: var(--color-blue-02);
 }
 
 /* Global */
@@ -93,6 +96,7 @@ a:hover {
   width: 64px;
 
   border-radius: 50%;
+  border: 5px solid var(--border-color);
 }
 
 .avatar__image {
