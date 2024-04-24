@@ -1,6 +1,6 @@
 :root {
   --color-black-01: #1e1f22;
-  --color-black-02: #18181b;
+  --color-black-02: #2b2b2b;
   --color-blue-01: #7780aa;
   --color-blue-02: #8c9ed8;
 
@@ -43,6 +43,12 @@ a:hover {
   text-decoration-color: inherit;
 }
 
+@media screen and (min-width: 800px) {
+  body {
+    background: var(--color-black-02);
+  }
+}
+
 /* Navigation */
 
 .navigation {
@@ -60,6 +66,10 @@ a:hover {
   letter-spacing: 3px;
 }
 
+@media screen and (min-width: 800px) {
+
+}
+
 /* Content */
 
 .content {
@@ -71,6 +81,14 @@ a:hover {
 
 .tag {
   color: var(--tag-color);
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    flex-direction: column;
+
+    justify-content: center;
+  }
 }
 
 /* Profile */
@@ -118,6 +136,18 @@ a:hover {
   list-style: none;
 }
 
+@media screen and (min-width: 800px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 0 1 auto;
+
+    backdrop-filter: blur(10px);
+  }
+}
+
 /* Resource */
 
 .resource {
@@ -145,6 +175,18 @@ a:hover {
   line-height: 2rem;
 }
 
+@media screen and (min-width: 800px) {
+  .resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 0 1 auto;
+
+    backdrop-filter: blur(10px);
+  }
+}
+
 /* Extra */
 
 .embed-album {
@@ -154,4 +196,15 @@ a:hover {
   top: 100px;
 
   transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 800px) {
+  .embed-album {
+    position: absolute;
+
+    left: 50%;
+    top: 100px;
+
+    transform: translate(-50%, 0);
+  }
 }
