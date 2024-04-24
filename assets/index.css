@@ -1,0 +1,142 @@
+:root {
+  --color-black-01: #1e1f22;
+  --color-blue-01: #7780aa;
+
+  --color-white: white;
+  --color-black: black;
+}
+
+:root {
+  --background-image-url: url("https://picx.ecss.dev/20240418/1323120.ibwurcqtd.webp");
+  --avatar-image-url: url("https://picx.ecss.dev/20240418/e457bcc089f836bf.wicllv181.webp");
+
+  --navigation-color: var(--color-black-01);
+  --tag-color: var(--color-blue-01);
+
+  --font-color: var(--color-white);
+}
+
+/* Global */
+
+* {
+  box-sizing: content-box;
+  color: var(--font-color);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+
+  background: center top no-repeat var(--background-image-url);
+}
+
+a {
+  text-decoration-color: transparent;
+
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration-color: inherit;
+}
+
+/* Navigation */
+
+.navigation {
+  overflow: hidden;
+  height: 64px;
+
+  background: var(--navigation-color);
+}
+
+.navigation__header {
+  text-align: center;
+
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+
+/* Content */
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  height: calc(100vh - 64px);
+}
+
+.tag {
+  color: var(--tag-color);
+}
+
+/* Profile */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 1 25%;
+
+  backdrop-filter: blur(10px);
+}
+
+.profile_header {
+  text-align: center;
+}
+
+.avatar {
+  overflow: hidden;
+  height: 64px;
+  width: 64px;
+
+  border-radius: 50%;
+}
+
+.avatar__image {
+  width: 64px;
+}
+
+.name {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.profile__content {
+  padding: 0 4rem;
+}
+
+.profile__item {
+  line-height: 2rem;
+
+  list-style: none;
+}
+
+/* Resource */
+
+.resource {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 1 25%;
+
+  backdrop-filter: blur(10px);
+}
+
+.resource__header {
+  text-align: center;
+}
+
+.resource__content {
+  padding: 0 1em;
+
+  list-style: "- ";
+}
+
+.resource__item {
+  line-height: 2rem;
+}
