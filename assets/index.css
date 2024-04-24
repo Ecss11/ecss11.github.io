@@ -140,3 +140,14 @@ a:hover {
 .resource__item {
   line-height: 2rem;
 }
+
+/* Extra */
+
+.embed-album {
+  position: absolute;
+
+  left: 50%;
+  top: 100px;
+
+  transform: translate(-50%, 0);
+}
