@@ -43,7 +43,11 @@ a:hover {
   text-decoration-color: inherit;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-device-width: 425px) {
+  * {
+    font-size: 1.5rem;
+  }
+
   body {
     background: var(--color-black-02);
   }
@@ -53,7 +57,7 @@ a:hover {
 
 .navigation {
   overflow: hidden;
-  height: 64px;
+  height: 4rem;
 
   background: var(--navigation-color);
 }
@@ -62,11 +66,11 @@ a:hover {
   text-align: center;
 
   font-size: 24px;
-  line-height: 20px;
+  line-height: 2rem;
   letter-spacing: 3px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-device-width: 425px) {
 
 }
 
@@ -76,17 +80,16 @@ a:hover {
   display: flex;
   justify-content: space-between;
 
-  height: calc(100vh - 64px);
+  height: calc(100vh - 4rem);
 }
 
 .tag {
   color: var(--tag-color);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-device-width: 425px) {
   .content {
     flex-direction: column;
-
     justify-content: center;
   }
 }
@@ -136,7 +139,8 @@ a:hover {
   list-style: none;
 }
 
-@media screen and (min-width: 800px) {
+
+@media screen and (max-device-width: 425px) {
   .profile {
     display: flex;
     flex-direction: column;
@@ -145,6 +149,15 @@ a:hover {
     flex: 0 1 auto;
 
     backdrop-filter: blur(10px);
+  }
+
+  .avatar {
+    width: 128px;
+    height: 128px;
+  }
+
+  .avatar__image {
+    width: 128px;
   }
 }
 
@@ -175,7 +188,7 @@ a:hover {
   line-height: 2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-device-width: 425px) {
   .resource {
     display: flex;
     flex-direction: column;
@@ -198,13 +211,8 @@ a:hover {
   transform: translate(-50%, 0);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-device-width: 425px) {
   .embed-album {
-    position: absolute;
-
-    left: 50%;
-    top: 100px;
-
-    transform: translate(-50%, 0);
+    display: none;
   }
 }
