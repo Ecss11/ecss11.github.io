@@ -82,7 +82,7 @@ body {
 
 .discover-items {
   display: flex;
-  flex-flow: wrap ;
+  flex-flow: wrap;
 
   list-style: none;
 
@@ -114,9 +114,23 @@ body {
 }
 
 #recent {
-  height: 60vh;
+  height: 100vh;
+
+  padding: 2em;
 }
 
+#links {
+  height: 40vh;
+
+  background: var(--color-theme-02);
+
+  padding: 2em;
+}
+
+
 #footer {
+  display: flex;
+  flex-flow: wrap;
+
   margin: 2em;
 }
